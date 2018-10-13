@@ -46,7 +46,7 @@ clean:
 
 # main targets
 
-deck.pdf: getGit.tex macros.tex $(DEPS) #poster.bib
+deck.pdf: getGit.tex macros.tex $(DEPS) #deck.bib
 	$(eval SRC_$@ = $(patsubst %.tex, %, $<))
 	$(LATEX) $(SRC_$@)
 #	$(BIBTEX) $(SRC_$@)
