@@ -1,7 +1,7 @@
 ## getGit Presentation
 ---
 A Beamer deck introducing git to newcomers.
-### Content copyright Chris Keefe (2018)
+### Content copyright Chris Keefe, Anthony Simard (2018)
 
 ### Beamer theme copyright Seth Brown (Dr.Bunsen)
 Available at https://github.com/drbunsen/drbunsen-beamer
