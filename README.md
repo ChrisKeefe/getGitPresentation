@@ -10,5 +10,6 @@ Available at https://github.com/drbunsen/drbunsen-beamer
 
 + [XeTeX](http://en.wikipedia.org/wiki/XeTeX)
 + [The Fontin Font](http://www.exljbris.com/fontin.html)
++ [The Fiontin Sans Font](https://www.exljbris.com/fontinsans.html)
 
 Debian Linux users may also need to ```sudo apt-get install fonts-lmodern```
