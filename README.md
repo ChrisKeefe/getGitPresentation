@@ -9,6 +9,6 @@ Available at https://github.com/drbunsen/drbunsen-beamer
 #### Dependencies:  
 
 + [XeTeX](http://en.wikipedia.org/wiki/XeTeX)
-+ [The Fontin Font](http://www.exljbris.com/fontin.html)
++ [The Fontin Sans Font](https://www.exljbris.com/fontinsans.html)
 
 Debian Linux users may also need to ```sudo apt-get install fonts-lmodern```

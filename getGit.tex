@@ -49,7 +49,7 @@
 
 % title slide definition
 \title{Get Git}
-\author{Chris Keefe}
+\author{Chris Keefe, Anthony Simard}
 \institute{Northern Arizona University \\
 Department of Computer Science \\
 School of Informatics, Computing, and Cyber Systems \\
@@ -91,51 +91,82 @@ School of Informatics, Computing, and Cyber Systems \\
 \section{What, Why, and How?}
 \begin{frame}
     \frametitle{What is git?}
-
-    \vspace{1cm} % generate some space between title and content
-    \begin{table}[h]
-    \centering
-    \begin{tabular}{lcccc} \bottomrule[2pt]
-        Name & Symbol & $A_r$ & M.P. (K) & IE (J) \\ \bottomrule
-        Helium & He & $4.00$ & $1$ & $3.94e^{-18}$ \\
-        Carbon & C & $12.01$ & $773$ & $3.94e^{-18}$ \\
-        Arsenic & As & $74.92$ & $1090$ & $1.48e^{-18}$ \\
-        Gold & Au & $196.96$ & $1337$ & $1.48e^{-18}$ \\
-        Cobalt & Co & $58.93$ & $1495$ & $1.26e^{-18}$ \\
-    \bottomrule[2pt]
-    \end{tabular}
-    \caption{Properties of Whoville Elements}
-    \end{table}
-
-    \vspace{-0.6cm} % compact spacing between table and text
-
-    \begin{columns}[t]
-    \column{4.5cm}
-    \begin{block}{Trace rare earth metals:}
     \begin{itemize}
-        \item{Ytterbium}
-        \item{Neodymium}
-        \item{Praseodymium}
+        \item{Git is a powerful version control system}
+            \begin{itemize}
+                \item{Git allows multiple people to easily update the same source}
+                \item{Git makes keeping track of changes easy and robust}
+            \end{itemize}
+        \item{Git allows people around the world to collaborate on open and closed source projects}
     \end{itemize}
-    \end{block}
-    \column{4.5cm}
-    \begin{block}{Obtaining Neodymium:}
-        \vspace{0.15cm}
-        \circled{1}$\textemdash$bastn\"{a}site \\
-        \circled{2}$\textemdash${monazite} \\
-    \end{block}
-    \end{columns}
+    \vspace{1cm} % generate some space between title and content
+
+    % Keeping all of this for now as an example in case we need to do something like this
+    %\begin{table}[h]
+    %\centering
+    %\begin{tabular}{lcccc} \bottomrule[2pt]
+    %    Name & Symbol & $A_r$ & M.P. (K) & IE (J) \\ \bottomrule
+    %    Helium & He & $4.00$ & $1$ & $3.94e^{-18}$ \\
+    %    Carbon & C & $12.01$ & $773$ & $3.94e^{-18}$ \\
+    %    Arsenic & As & $74.92$ & $1090$ & $1.48e^{-18}$ \\
+    %    Gold & Au & $196.96$ & $1337$ & $1.48e^{-18}$ \\
+    %    Cobalt & Co & $58.93$ & $1495$ & $1.26e^{-18}$ \\
+    %\bottomrule[2pt]
+    %\end{tabular}
+    %\caption{Properties of Whoville Elements}
+    %\end{table}
+
+    %\vspace{-0.6cm} % compact spacing between table and text
+
+    %\begin{columns}[t]
+    %\column{4.5cm}
+    %\begin{block}{Trace rare earth metals:}
+    %\begin{itemize}
+    %    \item{Ytterbium}
+    %    \item{Neodymium}
+    %    \item{Praseodymium}
+    %\end{itemize}
+    %\end{block}
+    %\column{4.5cm}
+    %\begin{block}{Obtaining Neodymium:}
+    %    \vspace{0.15cm}
+    %    \circled{1}$\textemdash$bastn\"{a}site \\
+    %    \circled{2}$\textemdash${monazite} \\
+    %\end{block}
+    %\end{columns}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Git is not GitHub}
+    \begin{itemize}
+        \item{Git is a version control system}
+        \item{GitHub is a site cataloging some git repositories}
+            \begin{itemize}
+                \item{It is free to put open source repos on GitHub}
+                \item{You have to pay to catalog closed source repos}
+                \item{Not all git repos are catologed on GitHub}
+                \item{Git repos absolutely do not need to be on GitHub}
+                \item{There are tons of open source repos on GitHub that you can go and check out right now}
+           \end{itemize}
+    \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
     \frametitle{Who uses git?}
-
+    \begin{itemize}
+        \item{Everyone uses git}
+            \begin{itemize}
+                \item{Major corporations}
+                \item{Governments}
+                \item{Independent software developers}
+                \item{Students collaborating on projects}
+                \item{Many MANY open source projects}
+           \end{itemize}
+        \item{Git can easily be used for open or closed source projects making it a diverse and powerful tool}
+        \item{We used git and GitHub as version control for this presentation}
+    \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
@@ -151,36 +182,26 @@ School of Informatics, Computing, and Cyber Systems \\
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
+\section{Getting Started With Git}
 \begin{frame}
     \frametitle{Git and Operating Systems}
     \begin{itemize}
-        \item{Windows doesn't git well.}
-        \item{Linux install through package manager}
-        \item{Mac: ???}
+        \item{Windows: Install gitbash.}
+        \item{Linux: Install through package manager.}
+        \item{Mac: Download git-osx-installer and run. }
     \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
-
-\begin{frame}
-    \frametitle{Git and Operating Systems}
-    \begin{itemize}
-        \item{Windows doesn't git well.}
-        \item{Linux install through package manager}
-        \item{Mac: ???}
-    \end{itemize}
-    \vspace{1cm} % generate some space between title and content
-\end{frame}
-\section{Getting Started with git}
 
 \begin{frame}
     \frametitle{Our Sample Workflow}
-      Simple graphic displaying our workflow with labels for
-      \begin{itemize}
+    Simple graphic displaying our workflow with labels for
+    \begin{itemize}
         \item{working dir}
         \item{local repo}
         \item{origin repo}
         \item{upstream repo}
-      \end{itemize}
+    \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
@@ -196,4 +217,3 @@ School of Informatics, Computing, and Cyber Systems \\
 \end{frame}
 
 \end{document}
-
