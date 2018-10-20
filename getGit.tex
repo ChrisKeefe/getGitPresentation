@@ -85,7 +85,7 @@ School of Informatics, Computing, and Cyber Systems \\
 % Set the background for the rest of the slides.
 % Insert infoline
 \setbeamertemplate{background}
- {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
+{\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 \setbeamertemplate{footline}[bunsentheme]
 
 \section{What, Why, and How?}
@@ -193,17 +193,24 @@ School of Informatics, Computing, and Cyber Systems \\
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
+
+\setbeamertemplate{background}
+{\includegraphics[width=\paperwidth,height=\paperheight]{assets/workflow_bg}}
 \begin{frame}
+    \vspace{1cm} % generate some space between title and content
     \frametitle{Our Sample Workflow}
-    Simple graphic displaying our workflow with labels for
-    \begin{itemize}
-        \item{working dir}
-        \item{local repo}
-        \item{origin repo}
-        \item{upstream repo}
-    \end{itemize}
+        1. Pull from Upstream Master to \\
+        Local Master \linebreak\linebreak
+        2. Branch to Working Directory \linebreak\linebreak
+        3. Make and test changes \linebreak\linebreak
+        4. Commit to Local Dev \linebreak\linebreak
+        5. Push to Origin Dev \linebreak\linebreak
+        6. Open pull request to Upstream \\
+        Master
     \vspace{1cm} % generate some space between title and content
 \end{frame}
+\setbeamertemplate{background}
+{\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 
 \begin{frame}
     \frametitle{Get source code}
