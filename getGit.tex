@@ -154,6 +154,31 @@ School of Informatics, Computing, and Cyber Systems \\
 \end{frame}
 
 \begin{frame}
+    \frametitle{Git is not GitHub}
+    \begin{itemize}
+        \item{Git is a version control system}
+        \item{GitHub is a site cataloging some git repositories}
+            \begin{itemize}
+                \item{It is free to put open source repos on GitHub}
+                \item{You have to pay to catalog closed source repos}
+                \item{Not all git repos are catologed on GitHub}
+                \item{Git repos absolutely do not need to be on GitHub}
+                \item{There are tons of open source repos on GitHub that you can go and check out right now}
+                \begin{itemize}
+                  \item{Flight Rules for Git: https://github.com/k88hudson/git-flight-rules}
+                  \item{Visual Studio Code: https://github.com/Microsoft/vscode}
+                  \item{Dungeon Crawl Stone Soup: https://github.com/crawl/crawl}
+                  \item{Tensorflow: https://github.com/tensorflow/tensorflow}
+                  \item{freeCodeCamp: https://github.com/freeCodeCamp/freeCodeCamp}
+                  \item{Bootstrap: https://github.com/twbs/bootstrap}
+                  \item{TheAlgorithms: https://github.com/TheAlgorithms/Python}
+                \end{itemize}
+           \end{itemize}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
     \frametitle{Who uses git?}
     \vspace{.5cm}
         \begin{figure}
@@ -236,13 +261,164 @@ School of Informatics, Computing, and Cyber Systems \\
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 
 \begin{frame}
+    \frametitle{The Master Branch is Sacred}
+    "There's only one rule: anything in the master branch is always deployable."
+    Display same workflow image as above.
+    \begin{itemize}
+        \item{Project-wide: The product can always ship. You always have a reservoir of clean code to pull from.}
+        \item{Locally: Prevents merge conflicts by ensuring you always have a clean copy to branch from.}
+        \item{origin repo}
+        \item{upstream repo}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
     \frametitle{Get source code}
     \begin{itemize}
-        \item{sign up for hacktoberfest}
-        \item{Fork the repo to which you want to contribute}
-        \item{Clone the repo - copies it to your local machine.  ``` git clone <repo html>```}
-        \item{Mac: ???}
+        \item{Note: For this example, we will be working on an existing repo. For your own projects, it's easy to initialize a new repo. Google "git init".}
+        \item{Note: during the presentation, define forking, and note that it is a github, not git process.}
+        \item{Fork the repo to which you want to contribute - this creates a complete copy of the repository in the cloud, to which you have edit access.}
+        \item{Clone your fork - this copies it to your local machine, where you can work with it.  ``` git clone <paste repo url>```}
     \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+    \frametitle{Explore and make Changes}
+    \begin{itemize}
+        \item{Navigate into the repo. ```cd <repo-name>``` You'll see:}
+            \begin{itemize}
+              \item{source files}
+              \item{utility files, including a README and license}
+              \item{a hidden .git folder, where the magic lives}
+            \end{itemize}
+        \item{```git status``` what changes have been made in your repo?}
+        \item{```git log``` - what does your commit history look like?}
+        \item{```git branch``` - what branch have I checked out?}
+        \item{```git remote -v``` - what remote copies of the repo does my git know about?}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+    \frametitle{Make Changes, and Commit Them}
+    \begin{itemize}
+        \item{```git checkout -b <branchName>``` - this creates and checks out a new branch, keeping your 'master' clean}
+        \item{Edit with your preferred editor. Make changes. Save them.}
+        \item{Return to the command line, and git status}
+        \item{```git add <filenames>``` tells git which files to track in this commit.}
+        \item{```git commit -m 'describes the content of the current commit'``` git saves a record of this point in history to your local machine.}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+    \frametitle{Push to your Fork}
+    \begin{itemize}
+        \item{```git push <repo-name> <branch-name>``` - pushes your changes to another repository }
+        \item{Git is decentralized. Push can send update any repo to which you have edit access.}
+        \item{Your changes may now be public. Consider others before rewriting history.}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open a Pull Request}
+    \begin{itemize}
+        \item{Pull requests let the owner of the repository incorporate your branch into their codebase}
+        \item{Note: A pull request will merge all new commits on the branch.}
+        \item{Be sure to follow the contribution guidelines of the repo owner.}
+        \item{Expect constructive criticism and requests for code changes.}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\section{Things to Look Forward To!}
+\begin{frame}
+    \frametitle{Uh-oh!}
+    \begin{itemize}
+        \item{TREE DIAGRAM}
+        \item{You forgot to create a new branch from master}
+        \begin{itemize}
+            \item{stash your changes, checkout a new branch, stash pop your changes on the new branch}
+            \item{If you've already made multiple commits to master, your process will be more complicated.}
+        \end{itemize}
+        \item{You forgot to update your source before editing}
+        \begin{itemize}
+            \item{stash or commit your changes, checkout master, pull code from upstream, merge that code with your working branch, stash pop if necessary}
+        \end{itemize}
+        \item{You pushed the wrong thing to your fork}
+        \begin{itemize}
+            \item{if anyone else is using that code, make changes as new commits}
+            \item{If you're sure you're the only user, it's possible to "force push" changes to the repo}
+        \end{itemize}
+        \item{You made a horrible, tangled mess of your commit history}
+        \begin{itemize}
+            \item{Breathe. Use git's fancy log options, or a GUI to visualize our mess.}
+            \item{Don't panic. Draw diagrams, and get clear on what needs to happen. Google is your friend.}
+            \item{Go for a walk, and come back to it. Git stores all kinds of information on your repo - even "irreversible" damage can usually be fixed with the help of ```git reflog```}
+        \end{itemize}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+    \frametitle{On the bright side...}
+    \begin{itemize}
+        \item{You'll never lose committed changes.}
+        \item{You have fine-grained control over your codebase and its history}
+        \item{Sharing your work with collaborators and possible employers is super easy.}
+        \item{Editing your code on different machines is super easy}
+        \item{You can contribute effectively to all kinds of amazing projects.}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\section{Let's do this!}
+\begin{frame}
+    \frametitle{Project Overview}
+    Goals:
+    \begin{itemize}
+        \item{numerical list?}
+        \item{Contribute unique content pages to a web site.}
+        \item{Edit existing pages in a workflow structured to avoid conflict.}
+        \item{Break things, while editing existing pages without coordination.}
+        \item{Set low expectations, exceed them, and have fun!}
+    \end{itemize}
+    Format:
+    \begin{itemize}
+        \item{Everyone with a laptop with git installed and a github profile signs up.}
+        \item{All others assigned at random to a group}
+        \item{More-experienced users are encouraged to help troubleshoot.}
+    \end{itemize}
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+\begin{frame}
+\frametitle{Git Cheat Sheet}
+\begin{columns}
+    \column{2.75in}
+        \begin{itemize}
+            \item{```git init```}
+            \item{```git clone <repo url>```}
+            \item{```git fetch <remote alias>```}
+            \item{```git pull <remote alias> <branch>```}
+            \item{```git checkout <branch name>```}
+            \item{```git checkout -b <branch name>```}
+            \item{```git push <remote alias> <branch>```}
+
+        \end{itemize}
+    \column{2.0in}
+        \begin{itemize}
+            \item{```git status```}
+            \item{```git git log```}
+            \item{```git branch```}
+            \item{```git remote -v```}
+            \item{```git add <filename>```}
+            \item{```git commit -m 'message'```}
+        \end{itemize}
+    \end{columns}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
