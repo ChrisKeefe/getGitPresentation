@@ -40,13 +40,13 @@ TARGETS := $(patsubst %, %.pdf, $(BUILD))
 all: $(TARGETS)
 
 clean:
-	rm -rf *.pdf *.aux *.bbl *.blg *.log *.nav *.out *.snm *.toc
+	rm -rf *.pdf *.aux *.bbl *.blg *.log *.nav *.out *.snm *.toc *.vrb
 
 .PHONY: all clean
 
 # main targets
 
-deck:	getGit.tex macros.tex $(DEPS) #deck.bib
+deck.pdf:	getGit.tex macros.tex $(DEPS) #deck.bib
 	$(eval SRC_$@ = $(patsubst %.tex, %, $<))
 	$(LATEX) $(SRC_$@)
 #	$(BIBTEX) $(SRC_$@)

@@ -93,13 +93,15 @@ School of Informatics, Computing, and Cyber Systems \\
 \begin{frame}
     \frametitle{Installing Git}
     Packages available from: https://git-scm.com/downloads
+    \vspace{0.5cm}
     \begin{itemize}
         \item{Windows: Install gitbash.}
         \item{Linux: Install through package manager.}
         \item{Mac: Download git-osx-installer and run. }
     \end{itemize}
-    Specific projects may have additional dependencies. Always check the Readme. 
-    \vspace{1cm} % generate some space between title and content
+    \vspace{0.5cm}
+    Note: We will be using Github today. Consider opening a free account now.
+    Ditto for Hacktoberfest, if you plan to participate this year.
 \end{frame}
 
 
@@ -113,7 +115,7 @@ School of Informatics, Computing, and Cyber Systems \\
                 \item{Git makes keeping track of changes easy and robust}
        		\item{Git allows people around the world to collaborate on open and closed source projects}
             \end{itemize}
-    \vspace{0.5cm}
+    \vspace{0.25cm}
     GitHub is a site hosting some git repositories
             \begin{itemize}
 		\item{It is free to host open source repos. Small private repos too.}
@@ -125,13 +127,16 @@ School of Informatics, Computing, and Cyber Systems \\
 		    \item{Project management}
 		    \item{Acess permissioning}
 		\end{itemize}
+    \vspace{0.25cm}
 	\item{Git repos absolutely do not need to be on GitHub}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Some neat repos}
+    \vspace{0.75cm}
     Check these out:
+    \vspace{0.25cm}
     \begin{itemize}
         \item{Flight Rules for Git: https://github.com/k88hudson/git-flight-rules}
         \item{Visual Studio Code: https://github.com/Microsoft/vscode}
@@ -141,7 +146,6 @@ School of Informatics, Computing, and Cyber Systems \\
         \item{Bootstrap: https://github.com/twbs/bootstrap}
         \item{TheAlgorithms: https://github.com/TheAlgorithms/Python}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
@@ -181,40 +185,42 @@ School of Informatics, Computing, and Cyber Systems \\
         \item{Git can easily be used for open or closed source projects making it a diverse and powerful tool}
         \item{We used git and GitHub as version control for this presentation}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
     \frametitle{Why use git?}
     \begin{itemize}
+    	\item{Fast, free, safe version control for your own code}
+        \vspace{0.25cm}
         \item{Employers use version control}
-        \item{Collaborations are easier with git}
+        \vspace{0.25cm}
+        \item{Collaboration is easier with git}
+        \vspace{0.25cm}
         \item{Alongside GitHub, Git makes showing off easy}
-	\item{Fast, free, redundant version control for your own code}
-        \item{It makes contributing to open source much easier.}
+        \vspace{0.25cm}
+        \item{Git skills simplify contributing to open source.}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \section{Some Vocabulary}
 \begin{frame}
 	\frametitle{Repository: A fancy bucket}
-        \vspace{1cm} % generate some space between title and content
 	\begin{itemize}
 	    \item{Repositories can be on your local computer, a friend's machine, or on the cloud.}
+        \vspace{0.5cm}
 	    \item{Git repositories hold special hidden files that describe your project's history}
+        \vspace{0.5cm}
 	    \item{You can perform `git` commands from within a repository}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Commit: the basic unit of change}
-        \vspace{1cm} % generate some space between title and content
 	\begin{itemize}
 	    \item{A commit is a thematically grouped set of changes}
-        \vspace{0.5cm} % generate some space between title and content
+        \vspace{0.5cm}
 	    \item{Commits let us understand and manipulate our development history}
-        \vspace{0.5cm} % generate some space between title and content
+        \vspace{0.5cm}
 	    \item{Group and name your commits well, so they're easy to work with.}
 	\end{itemize}
 \end{frame}
@@ -493,19 +499,18 @@ o--o--o-----o----o--o------o--o--o--o
 \begin{frame}
     \frametitle{The Master Branch is Sacred}
     "There's only one rule: anything in the master branch is always deployable."
+    \vspace{0.25cm}
     \begin{itemize}
         \item{Project-wide: The product can always ship. You always have a reservoir of clean code to pull from.}
         \item{Locally: Prevents merge conflicts by ensuring you always have a clean copy to branch from.}
         \item{origin repo vs upstream repo}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 % My super roughed up workflow is still there for now just so that slide has something
 \setbeamertemplate{background}
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/workflow_bg}}
 \begin{frame}
-    \vspace{1cm} % generate some space between title and content
     \frametitle{Our Sample Workflow}
         1. Pull from Upstream Master to \\
         Local Master \linebreak\linebreak
@@ -515,26 +520,26 @@ o--o--o-----o----o--o------o--o--o--o
         5. Push to Origin Dev \linebreak\linebreak
         6. Open pull request to Upstream \\
         Master
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 \setbeamertemplate{background}
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{Get source code}
+Today, we will be updating an existing Github repo. For your own projects, it's easy to initialize a new repo. Google "git init".
+You will need:
     \begin{itemize}
-        \item{Note: For this example, we will be working on an existing repo. For your own projects, it's easy to initialize a new repo. Google "git init".}
-        \item{Note: during the presentation, define forking, and note that it is a github, not git process.}
-        \item{Fork the repo to which you want to contribute - this creates a complete copy of the repository in the cloud, to which you have edit access.}
-        \item{Clone your fork - this copies it to your local machine, where you can work with it.  ``` git clone <paste repo url>```}
+        \item{Buddies to work with}
+        \item{A computer with Git, an editor, and a Github account}
+        \item{A "Fork" of the repo to which you want to contribute - a fork is a complete copy of the repository, to which you have edit access. Note: this is a Github concept}
+        \item{A "Clone" of your fork - this copies it to your local machine, where you can work with it.  \verb/git clone <paste repo url>/}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
-    \frametitle{Explore and make Changes}
+    \frametitle{Explore your repo}
     \begin{itemize}
-        \item{Navigate into the repo. ```cd <repo-name>``` You'll see:}
+        \item{Navigate into the cloned repo. ```cd <repo-name>``` You'll see:}
             \begin{itemize}
               \item{source files}
               \item{utility files, including a README and license}
@@ -545,7 +550,6 @@ o--o--o-----o----o--o------o--o--o--o
         \item{```git branch``` - what branch have I checked out?}
         \item{```git remote -v``` - what remote copies of the repo does my git know about?}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
@@ -553,61 +557,58 @@ o--o--o-----o----o--o------o--o--o--o
     \begin{itemize}
         \item{```git checkout -b <branchName>``` - this creates and checks out a new branch, keeping your 'master' clean}
         \item{Edit with your preferred editor. Make changes. Save them.}
-        \item{Return to the command line, and git status}
+        \item{Return to the command line, and ```git status```}
         \item{```git add <filenames>``` tells git which files to track in this commit.}
         \item{```git commit -m 'describes the content of the current commit'``` git saves a record of this point in history to your local machine.}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
     \frametitle{Push to your Fork}
     \begin{itemize}
         \item{```git push <repo-name> <branch-name>``` - pushes your changes to another repository }
-        \item{Git is decentralized. Push can send update any repo to which you have edit access.}
+        \item{Git is decentralized. Push can update any repo to which you have edit access.}
         \item{Your changes may now be public. Consider others before rewriting history.}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
     \frametitle{Open a Pull Request}
     \begin{itemize}
-        \item{Pull requests let the owner of the repository incorporate your branch into their codebase}
-        \item{Note: A pull request will merge all new commits on the branch.}
+        \item{Pull requests ask the owner of the repository to merge your branch into their codebase}
+        \item{A pull request will merge all commits on the branch. Make a new branch if you want to develop a new PR.}
         \item{Be sure to follow the contribution guidelines of the repo owner.}
         \item{Expect constructive criticism and requests for code changes.}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \section{Things to Look Forward To!}
 \begin{frame}
     \frametitle{Uh-oh!}
+    \vspace{0.25cm}
+    There are many fun ways to break things with Git. Let's get started!
     \begin{itemize}
-        \item{TREE DIAGRAM}
         \item{You forgot to create a new branch from master}
         \begin{itemize}
-            \item{stash your changes, checkout a new branch, stash pop your changes on the new branch}
-            \item{If you've already made multiple commits to master, your process will be more complicated.}
+            \item{`stash` changes, `checkout` a branch, `stash pop` on the new branch}
+            \item{If you've made multiple commits to `master`, try `rebase`}
         \end{itemize}
         \item{You forgot to update your source before editing}
         \begin{itemize}
-            \item{stash or commit your changes, checkout master, pull code from upstream, merge that code with your working branch, stash pop if necessary}
+            \item{`stash` or `commit` your changes, 'checkout master', 'pull' code from 'upstream', 'merge' that code with your working branch, 'stash pop' if necessary}
         \end{itemize}
         \item{You pushed the wrong thing to your fork}
         \begin{itemize}
             \item{if anyone else is using that code, make changes as new commits}
-            \item{If you're sure you're the only user, it's possible to "force push" changes to the repo}
+            \item{If you're the only user, you might "force push" changes to the repo}
         \end{itemize}
         \item{You made a horrible, tangled mess of your commit history}
         \begin{itemize}
-            \item{Breathe. Use git's fancy log options, or a GUI to visualize our mess.}
-            \item{Don't panic. Draw diagrams, and get clear on what needs to happen. Google is your friend.}
-            \item{Go for a walk, and come back to it. Git stores all kinds of information on your repo - even "irreversible" damage can usually be fixed with the help of ```git reflog```}
+            \item{Breathe. Use git's fancy `log` options or a GUI to display your mess.}
+            \item{Don't panic. Draw diagrams. Make a plan. Google is your friend.}
+            \item{Go walking. "Irreversible" damage can usually be fixed by `git reflog`}
         \end{itemize}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
@@ -619,27 +620,18 @@ o--o--o-----o----o--o------o--o--o--o
         \item{Editing your code on different machines is super easy}
         \item{You can contribute effectively to all kinds of amazing projects.}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \section{Let's do this!}
 \begin{frame}
     \frametitle{Project Overview}
-    Goals:
+    What's next?
     \begin{itemize}
-        \item{numerical list?}
-        \item{Contribute unique content pages to a web site.}
-        \item{Edit existing pages in a workflow structured to avoid conflict.}
-        \item{Break things, while editing existing pages without coordination.}
-        \item{Set low expectations, exceed them, and have fun!}
+        \item{Work closely with another group to edit existing pages and avoid mergeconflict.}
+        \item{Create merge conflicts by editing existing pages without coordination.}
+        \item{Feeling bold? Contribute to this presentation instead of the test repo.}
+        \item{Super pro? Find an open source project, and contribute to that.}
     \end{itemize}
-    Format:
-    \begin{itemize}
-        \item{Everyone with a laptop with git installed and a github profile signs up.}
-        \item{All others assigned at random to a group}
-        \item{More-experienced users are encouraged to help troubleshoot.}
-    \end{itemize}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \begin{frame}
@@ -666,7 +658,6 @@ o--o--o-----o----o--o------o--o--o--o
             \item{```git commit -m 'message'```}
         \end{itemize}
     \end{columns}
-    \vspace{1cm} % generate some space between title and content
 \end{frame}
 
 \end{document}
