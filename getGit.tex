@@ -48,6 +48,7 @@
 \include{macros}
 
 % title slide definition
+% TODO: Change image to something less creepy - complex knot pattern?
 \title{Get Git}
 \author{Chris Keefe, Anthony Simard, Carter Taylor}
 \institute{Northern Arizona University \\
@@ -88,92 +89,57 @@ School of Informatics, Computing, and Cyber Systems \\
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 \setbeamertemplate{footline}[bunsentheme]
 
+\section{Getting Started With Git}
+\begin{frame}
+    \frametitle{Installing Git}
+    Packages available from: https://git-scm.com/downloads
+    \begin{itemize}
+        \item{Windows: Install gitbash.}
+        \item{Linux: Install through package manager.}
+        \item{Mac: Download git-osx-installer and run. }
+    \end{itemize}
+    Specific projects may have additional dependencies. Always check the Readme. 
+    \vspace{1cm} % generate some space between title and content
+\end{frame}
+
+
 \section{What, Why, and How?}
 \begin{frame}
-    \frametitle{What is git?}
-    \begin{itemize}
-        \item{Git is a powerful version control system}
+    \frametitle{Git is not GitHub}
+    \vspace{0.5cm} % generate some space between title and content
+    Git is a powerful version control system
             \begin{itemize}
                 \item{Git allows multiple people to easily update the same source}
                 \item{Git makes keeping track of changes easy and robust}
+       		\item{Git allows people around the world to collaborate on open and closed source projects}
             \end{itemize}
-        \item{Git allows people around the world to collaborate on open and closed source projects}
+    \vspace{0.5cm}
+    GitHub is a site hosting some git repositories
+            \begin{itemize}
+		\item{It is free to host open source repos. Small private repos too.}
+                \item{Large closed-source repos cost \$\$\$}
+        	\item{GitHub provides communication and project management tools}
+	        \begin{itemize}
+		    \item{Pull requests}
+		    \item{Issue tracking}
+		    \item{Project management}
+		    \item{Acess permissioning}
+		\end{itemize}
+	\item{Git repos absolutely do not need to be on GitHub}
     \end{itemize}
-    \vspace{1cm} % generate some space between title and content
-
-    % Keeping all of this for now as an example in case we need to do something like this
-    %\begin{table}[h]
-    %\centering
-    %\begin{tabular}{lcccc} \bottomrule[2pt]
-    %    Name & Symbol & $A_r$ & M.P. (K) & IE (J) \\ \bottomrule
-    %    Helium & He & $4.00$ & $1$ & $3.94e^{-18}$ \\
-    %    Carbon & C & $12.01$ & $773$ & $3.94e^{-18}$ \\
-    %    Arsenic & As & $74.92$ & $1090$ & $1.48e^{-18}$ \\
-    %    Gold & Au & $196.96$ & $1337$ & $1.48e^{-18}$ \\
-    %    Cobalt & Co & $58.93$ & $1495$ & $1.26e^{-18}$ \\
-    %\bottomrule[2pt]
-    %\end{tabular}
-    %\caption{Properties of Whoville Elements}
-    %\end{table}
-
-    %\vspace{-0.6cm} % compact spacing between table and text
-
-    %\begin{columns}[t]
-    %\column{4.5cm}
-    %\begin{block}{Trace rare earth metals:}
-    %\begin{itemize}
-    %    \item{Ytterbium}
-    %    \item{Neodymium}
-    %    \item{Praseodymium}
-    %\end{itemize}
-    %\end{block}
-    %\column{4.5cm}
-    %\begin{block}{Obtaining Neodymium:}
-    %    \vspace{0.15cm}
-    %    \circled{1}$\textemdash$bastn\"{a}site \\
-    %    \circled{2}$\textemdash${monazite} \\
-    %\end{block}
-    %\end{columns}
-
 \end{frame}
 
 \begin{frame}
-    \frametitle{Git is not GitHub}
+    \frametitle{Some neat repos}
+    Check these out:
     \begin{itemize}
-        \item{Git is a version control system}
-        \item{GitHub is a site cataloging some git repositories}
-            \begin{itemize}
-                \item{It is free to put open source repos on GitHub}
-                \item{You have to pay to catalog closed source repos}
-                \item{Not all git repos are catologed on GitHub}
-                \item{Git repos absolutely do not need to be on GitHub}
-                \item{There are tons of open source repos on GitHub that you can go and check out right now}
-           \end{itemize}
-    \end{itemize}
-    \vspace{1cm} % generate some space between title and content
-\end{frame}
-
-\begin{frame}
-    \frametitle{Git is not GitHub}
-    \begin{itemize}
-        \item{Git is a version control system}
-        \item{GitHub is a site cataloging some git repositories}
-            \begin{itemize}
-                \item{It is free to put open source repos on GitHub}
-                \item{You have to pay to catalog closed source repos}
-                \item{Not all git repos are catologed on GitHub}
-                \item{Git repos absolutely do not need to be on GitHub}
-                \item{There are tons of open source repos on GitHub that you can go and check out right now}
-                \begin{itemize}
-                  \item{Flight Rules for Git: https://github.com/k88hudson/git-flight-rules}
-                  \item{Visual Studio Code: https://github.com/Microsoft/vscode}
-                  \item{Dungeon Crawl Stone Soup: https://github.com/crawl/crawl}
-                  \item{Tensorflow: https://github.com/tensorflow/tensorflow}
-                  \item{freeCodeCamp: https://github.com/freeCodeCamp/freeCodeCamp}
-                  \item{Bootstrap: https://github.com/twbs/bootstrap}
-                  \item{TheAlgorithms: https://github.com/TheAlgorithms/Python}
-                \end{itemize}
-           \end{itemize}
+        \item{Flight Rules for Git: https://github.com/k88hudson/git-flight-rules}
+        \item{Visual Studio Code: https://github.com/Microsoft/vscode}
+        \item{Dungeon Crawl Stone Soup: https://github.com/crawl/crawl}
+        \item{Tensorflow: https://github.com/tensorflow/tensorflow}
+        \item{freeCodeCamp: https://github.com/freeCodeCamp/freeCodeCamp}
+        \item{Bootstrap: https://github.com/twbs/bootstrap}
+        \item{TheAlgorithms: https://github.com/TheAlgorithms/Python}
     \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
@@ -219,24 +185,318 @@ School of Informatics, Computing, and Cyber Systems \\
 \end{frame}
 
 \begin{frame}
-    \frametitle{Why do I use git?}
+    \frametitle{Why use git?}
     \begin{itemize}
-        \item{It's required by my job.}
-        \item{Alongside GitHub, git makes showing off easy.}
-        \item{It gives me fast, free, highly redundant version control.}
-        \item{It makes it easier to work with other people.}
+        \item{Employers use version control}
+        \item{Collaborations are easier with git}
+        \item{Alongside GitHub, Git makes showing off easy}
+	\item{Fast, free, redundant version control for your own code}
         \item{It makes contributing to open source much easier.}
     \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
 
-\section{Getting Started With Git}
+\section{Some Vocabulary}
 \begin{frame}
-    \frametitle{Git and Operating Systems}
+	\frametitle{Repository: A fancy bucket}
+        \vspace{1cm} % generate some space between title and content
+	\begin{itemize}
+	    \item{Repositories can be on your local computer, a friend's machine, or on the cloud.}
+	    \item{Git repositories hold special hidden files that describe your project's history}
+	    \item{You can perform `git` commands from within a repository}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Commit: the basic unit of change}
+        \vspace{1cm} % generate some space between title and content
+	\begin{itemize}
+	    \item{A commit is a thematically grouped set of changes}
+        \vspace{0.5cm} % generate some space between title and content
+	    \item{Commits let us understand and manipulate our development history}
+        \vspace{0.5cm} % generate some space between title and content
+	    \item{Group and name your commits well, so they're easy to work with.}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	A is a commit, with a really bad name.
+
+\begin{verbatim}
+
+
+
+A  
+o
+
+
+
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	Your software project grows across time.
+\begin{verbatim}
+
+
+
+A  
+o
+
+
+
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	    Your software project grows across time.
+\begin{verbatim}
+
+
+
+A  B
+o--o
+   
+
+
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	    Your software project grows across time.
+\begin{verbatim}
+
+
+
+A  B  C
+o--o--o
+      
+     
+    
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your project's branches.
+\begin{verbatim}
+
+
+
+A  B  C  
+o--o--o--\
+          \ 
+           \--o
+              D
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your projects branches.
+\begin{verbatim}
+
+             
+              
+A  B  C     E
+o--o--o--\--o
+          \ 
+           \--o
+              D  
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your projects branches.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /
+o--o--o--\--o/
+          \ 
+           \--o
+              D  
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your projects branches.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G
+o--o--o--\--o/---o
+          \ 
+           \--o
+              D  
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your projects branches.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G
+o--o--o--\--o/---o
+          \ 
+           \--o--o--\
+              D  H   \
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	You develop many features on your projects branches.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G
+o--o--o--\--o/---o
+          \            
+           \--o--o--\--o
+              D  H   \ I
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	When harvest time comes, you pick the good ones and leave the bad.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G
+o--o--o--\--o/---o
+          \            
+           \--o--o--\--o
+              D  H   \ I
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	When harvest time comes, you pick the good ones and leave the bad.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G  F
+o--o--o--\--o/---o--o
+          \            
+           \--o--o--\--o
+              D  H   \ I
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	When harvest time comes, you pick the good ones and leave the bad.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G  F      D  H  I  J(merged)
+o--o--o--\--o/---o--o-----/o--o--o--o
+          \              /
+           \--o--o--\--o/
+              D  H   \ I
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	It's possible to clean up unused branches at any time.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G  F      D  H  I  J(merged)
+o--o--o--\--o/---o--o-----/o--o--o--o
+          \              /
+           \--o--o--\--o/
+              D  H   \ I
+                      \--o
+                        DUMB
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	It's possible to clean up unused branches at any time.
+\begin{verbatim}
+                   F
+                /--o
+               /
+A  B  C     E /  G  F      D  H  I  J(merged)
+o--o--o--\--o/---o--o-----/o--o--o--o
+          \              /
+           \--o--o-----o/
+              D  H    I
+                      
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	It's possible to clean up unused branches at any time.
+\begin{verbatim}
+                   
+                
+               
+A  B  C     E    G  F      D  H  I  J(merged)
+o--o--o--\--o----o--o-----/o--o--o--o
+          \              /
+           \--o--o-----o/
+              D  H    I
+                      
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Branch: development history}
+	It's possible to clean up unused branches at any time.
+\begin{verbatim}
+                   
+                
+               
+A  B  C     E    G  F      D  H  I  J(merged)
+o--o--o-----o----o--o------o--o--o--o
+          
+          
+          
+                      
+\end{verbatim}
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Master Branch is Sacred}
+    "There's only one rule: anything in the master branch is always deployable."
     \begin{itemize}
-        \item{Windows: Install gitbash.}
-        \item{Linux: Install through package manager.}
-        \item{Mac: Download git-osx-installer and run. }
+        \item{Project-wide: The product can always ship. You always have a reservoir of clean code to pull from.}
+        \item{Locally: Prevents merge conflicts by ensuring you always have a clean copy to branch from.}
+        \item{origin repo vs upstream repo}
     \end{itemize}
     \vspace{1cm} % generate some space between title and content
 \end{frame}
@@ -259,19 +519,6 @@ School of Informatics, Computing, and Cyber Systems \\
 \end{frame}
 \setbeamertemplate{background}
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
-
-\begin{frame}
-    \frametitle{The Master Branch is Sacred}
-    "There's only one rule: anything in the master branch is always deployable."
-    Display same workflow image as above.
-    \begin{itemize}
-        \item{Project-wide: The product can always ship. You always have a reservoir of clean code to pull from.}
-        \item{Locally: Prevents merge conflicts by ensuring you always have a clean copy to branch from.}
-        \item{origin repo}
-        \item{upstream repo}
-    \end{itemize}
-    \vspace{1cm} % generate some space between title and content
-\end{frame}
 
 \begin{frame}
     \frametitle{Get source code}
