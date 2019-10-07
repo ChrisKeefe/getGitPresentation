@@ -10,5 +10,8 @@ Available at https://github.com/drbunsen/drbunsen-beamer
 
 + [XeTeX](http://en.wikipedia.org/wiki/XeTeX)
 + [The Fontin Sans Font](https://www.exljbris.com/fontinsans.html)
++ `pzdr.tfm` font file: 
 
-Debian Linux users may also need to ```sudo apt-get install fonts-lmodern```
+- Ubuntu Users may need to ```sudo apt install texlive-fonts-recommended```
+- Debian Linux users may need to ```sudo apt install fonts-lmodern```
+- Other OS flavors, YMMV.
