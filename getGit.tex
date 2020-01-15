@@ -100,7 +100,7 @@ School of Informatics, Computing, and Cyber Systems \\
 
 \section{Getting Started With Git}
 \begin{frame}
-    \frametitle{Installing Git}
+    \frametitle{Install Git}
     Packages available from: \url{https://git-scm.com/downloads}
     \vspace{0.5cm}
     \begin{itemize}
@@ -109,8 +109,9 @@ School of Informatics, Computing, and Cyber Systems \\
         \item{Mac: Download git-osx-installer and run. }
     \end{itemize}
     \vspace{0.5cm}
-    Note: We will be using Github today. Consider opening a free account now.
-    Ditto for Hacktoberfest, if you plan to participate this year.
+    Note: We will be using Github today, but there are many similar options. 
+	Consider opening a free account now.
+    
 \end{frame}
 
 
@@ -127,8 +128,6 @@ School of Informatics, Computing, and Cyber Systems \\
     \vspace{0.25cm}
     GitHub is a site hosting some git repositories
             \begin{itemize}
-		\item{It is free to host open source repos. Small private repos too.}
-                \item{Large closed-source repos cost \$\$\$}
         	\item{GitHub provides communication and project management tools}
 	        \begin{itemize}
 		    \item{Pull requests}
@@ -138,22 +137,6 @@ School of Informatics, Computing, and Cyber Systems \\
 		\end{itemize}
     \vspace{0.25cm}
 	\item{Git repos absolutely do not need to be on GitHub}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Some neat repos}
-    \vspace{0.75cm}
-    Check these out:
-    \vspace{0.25cm}
-    \begin{itemize}
-        \item{\href{https://github.com/k88hudson/git-flight-rules}{Flight Rules for Git}}
-        \item{\href{https://github.com/Microsoft/vscode}{Visual Studio Code}}
-        \item{\href{https://github.com/crawl/crawl}{Dungeon Crawl Stone Soup}}
-        \item{\href{https://github.com/tensorflow/tensorflow}{Tensorflow}}
-        \item{\href{https://github.com/freeCodeCamp/freeCodeCamp}{freeCodeCamp}}
-        \item{\href{https://github.com/twbs/bootstrap}{Bootstrap}}
-        \item{\href{https://github.com/TheAlgorithms/Python}{TheAlgorithms}}
     \end{itemize}
 \end{frame}
 
@@ -191,23 +174,8 @@ School of Informatics, Computing, and Cyber Systems \\
                 \item{Students collaborating on projects}
                 \item{Many MANY open source projects}
            \end{itemize}
-        \item{Git can easily be used for open or closed source projects making it a diverse and powerful tool}
+   \item{\href{https://github.com/Microsoft/vscode}{Visual Studio Code} \hfill \href{https://github.com/tensorflow/tensorflow}{Tensorflow} \hfill \href{https://github.com/twbs/bootstrap}{Bootstrap}}
         \item{We used git and GitHub as version control for this presentation}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Why use git?}
-    \begin{itemize}
-    	\item{Fast, free, safe version control for your own code}
-        \vspace{0.25cm}
-        \item{Employers use version control}
-        \vspace{0.25cm}
-        \item{Collaboration is easier with git}
-        \vspace{0.25cm}
-        \item{Alongside GitHub, Git makes showing off easy}
-        \vspace{0.25cm}
-        \item{Git skills simplify contributing to open source.}
     \end{itemize}
 \end{frame}
 
@@ -683,95 +651,8 @@ o--o--o-----o----o--o------o--o--o--o
 \setbeamertemplate{background}
 {\includegraphics[width=\paperwidth,height=\paperheight]{assets/slide_bg}}
 
-\begin{frame}[fragile]
-    \frametitle{Get source code}
-Today, we will be updating an existing Github repo. For your own projects, it's easy to initialize a new repo. Google "git init".
-You will need:
-    \begin{itemize}
-        \item{Buddies to work with}
-        \item{A computer with Git, an editor, and a Github account}
-        \item{A "Fork" of the repo to which you want to contribute - a fork is a complete copy of the repository, to which you have edit access. Note: this is a Github concept}
-        \item{A "Clone" of your fork - this copies it to your local machine, where you can work with it.  \verb/git clone <paste repo url>/}
-    \end{itemize}
-\end{frame}
-
 \begin{frame}
-    \frametitle{Explore your repo}
-    \begin{itemize}
-        \item{Navigate into the cloned repo. ```cd <repo-name>``` You'll see:}
-            \begin{itemize}
-              \item{source files}
-              \item{utility files, including a README and license}
-              \item{a hidden .git folder, where the magic lives}
-            \end{itemize}
-        \item{```git status``` what changes have been made in your repo?}
-        \item{```git log``` - what does your commit history look like?}
-        \item{```git branch``` - what branch have I checked out?}
-        \item{```git remote -v``` - what remote copies of the repo does my git know about?}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Make Changes, and Commit Them}
-    \begin{itemize}
-        \item{```git checkout -b <branchName>``` - this creates and checks out a new branch, keeping your 'master' clean}
-        \item{Edit with your preferred editor. Make changes. Save them.}
-        \item{Return to the command line, and ```git status```}
-        \item{```git add <filenames>``` tells git which files to track in this commit.}
-        \item{```git commit -m 'describes the content of the current commit'``` git saves a record of this point in history to your local machine.}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Push to your Fork}
-    \begin{itemize}
-        \item{```git push <repo-name> <branch-name>``` - pushes your changes to another repository }
-        \item{Git is decentralized. Push can update any repo to which you have edit access.}
-        \item{Your changes may now be public. Consider others before rewriting history.}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Open a Pull Request}
-    \begin{itemize}
-        \item{Pull requests ask the owner of the repository to merge your branch into their codebase}
-        \item{A pull request will merge all commits on the branch. Make a new branch if you want to develop a new PR.}
-        \item{Be sure to follow the contribution guidelines of the repo owner.}
-        \item{Expect constructive criticism and requests for code changes.}
-    \end{itemize}
-\end{frame}
-
-\section{Things to Look Forward To!}
-\begin{frame}
-    \frametitle{Uh-oh!}
-    \vspace{0.25cm}
-    There are many fun ways to break things with Git. Let's get started!
-    \begin{itemize}
-        \item{You forgot to create a new branch from master}
-        \begin{itemize}
-            \item{`stash` changes, `checkout` a branch, `stash pop` on the new branch}
-            \item{If you've made multiple commits to `master`, try `rebase`}
-        \end{itemize}
-        \item{You forgot to update your source before editing}
-        \begin{itemize}
-            \item{`stash` or `commit` your changes, 'checkout master', 'pull' code from 'upstream', 'merge' that code with your working branch, 'stash pop' if necessary}
-        \end{itemize}
-        \item{You pushed the wrong thing to your fork}
-        \begin{itemize}
-            \item{if anyone else is using that code, make changes as new commits}
-            \item{If you're the only user, you might "force push" changes to the repo}
-        \end{itemize}
-        \item{You made a horrible, tangled mess of your commit history}
-        \begin{itemize}
-            \item{Breathe. Use git's fancy `log` options or a GUI to display your mess.}
-            \item{Don't panic. Draw diagrams. Make a plan. Google is your friend.}
-            \item{Go walking. "Irreversible" damage can usually be fixed by `git reflog`}
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{On the bright side...}
+    \frametitle{So... why git?}
     \begin{itemize}
         \item{You'll never lose committed changes.}
         \item{You have fine-grained control over your codebase and its history}
@@ -781,42 +662,32 @@ You will need:
     \end{itemize}
 \end{frame}
 
-\section{Let's do this!}
-\begin{frame}
-    \frametitle{Project Overview}
-    What's next?
-    \begin{itemize}
-        \item{Work closely with another group to edit existing pages and avoid mergeconflict.}
-        \item{Create merge conflicts by editing existing pages without coordination.}
-        \item{Feeling bold? Contribute to this presentation instead of the test repo.}
-        \item{Super pro? Find an open source project, and contribute to that.}
-    \end{itemize}
-\end{frame}
-
 \begin{frame}
 \frametitle{Git Cheat Sheet}
 \begin{columns}
     \column{2.75in}
         \begin{itemize}
-            \item{```git init```}
-            \item{```git clone <repo url>```}
-            \item{```git fetch <remote alias>```}
-            \item{```git pull <remote alias> <branch>```}
-            \item{```git checkout <branch name>```}
-            \item{```git checkout -b <branch name>```}
-            \item{```git push <remote alias> <branch>```}
+            \item{`git init`}
+            \item{`git clone <repo url>`}
+            \item{`git fetch <remote alias>`}
+            \item{`git pull <remote alias> <branch>`}
+            \item{`git checkout <branch name>`}
+            \item{`git checkout -b <branch name>`}
+            \item{`git push <remote alias> <branch>`}
 
         \end{itemize}
     \column{2.0in}
         \begin{itemize}
-            \item{```git status```}
-            \item{```git git log```}
-            \item{```git branch```}
-            \item{```git remote -v```}
-            \item{```git add <filename>```}
-            \item{```git commit -m 'message'```}
+            \item{`git status`}
+            \item{`git git log`}
+            \item{`git branch`}
+            \item{`git remote -v`}
+            \item{`git add <filename>`}
+            \item{`git commit -m 'message'`}
         \end{itemize}
     \end{columns}
+	\vspace{.5cm}
+	github.com/ChrisKeefe/getGitPresentation/tree/mini-git
 \end{frame}
 
 \end{document}
